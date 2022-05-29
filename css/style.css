@@ -9,6 +9,20 @@ Brand Primary (Purple): #B294F0
 Brand Secondary (Dark Pink): #f209B1
 */
 
+header {
+    background-color: #d3d3d3;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 3px solid #4a4a4a;
+
+  }
+
+
+
+
+
+
+}
 body {
   background-color: #ffffff;
   font-family: 'Nanum Gothic', sans-serif;
@@ -87,4 +101,8 @@ a:focus {
   color: #ffffff;
 }
 
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
 }

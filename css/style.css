@@ -8,21 +8,24 @@ Olive Primary (Light Green): #E3F0E4
 Brand Primary (Purple): #B294F0
 Brand Secondary (Dark Pink): #f209B1
 */
+* {
+  box-sizing: border-box;
+}
 
+html {
+      scroll-behavior: smooth;
+    }
+
+/* header styling */
 header {
     background-color: #d3d3d3;
+    text-align: center;
     padding: 10px;
     margin: 10px;
-    border-bottom: 3px solid #4a4a4a;
-
-  }
-
-
-
-
-
-
+    box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
+    position: relative;
 }
+
 body {
   background-color: #ffffff;
   font-family: 'Nanum Gothic', sans-serif;
@@ -30,11 +33,13 @@ body {
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
-  }
-  h1, h2, h3, h4 {
-  line-height: 1.4;
 }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+
 h1 {
+  text-align: center;
   font-size: 2.75em;
   font-weight: 700;
 }
@@ -48,18 +53,58 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 img {
   width: 100%;
 }
+
+/* hero/work */
+#hero {
+  background-color: #d3d3d3;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  margin: 10px;
+}
+
+#hero p {
+  text-align: center;
+}
+
+.row {
+  margin: 25px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#work
+.row {
+   padding-bottom: 25px;
+   border-bottom: 1px solid rgba(22, 16, 31, 0.3);
+}
+
+/* nav */
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
 a {
   color: #B294F0;
   text-decoration: none; /* No underlining */
 }
-}
+
 a:visited { /* visited link */
   color: #B294F0;
 }
@@ -83,13 +128,16 @@ a:focus {
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #f209B1; /* width of the border, type, color */
+  border-bottom: 2px solid #787878; /* width of the border, type, color */
   transition: 0.2s opacity;
+  text-align: center;
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
+/*footer*/
 .button.contact {
   background-color: transparent;
   color: #B294F0;
@@ -101,8 +149,89 @@ a:focus {
   color: #ffffff;
 }
 
+svg {
+ max-width: 32px
+}
+
+/* work/projects */
+#work .row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.coverpic {
+  width: 500px;
+  height: auto;
+  position: relative;
+}
+
+
+/* social media icons */
+.social {
+  padding: 20px;
+}
+.social:hover {
+  opacity: 0.5;
+}
+
 /* Layout styling */
 
 .container {
   padding: 0 15px;
+}
+.logo {
+  max-width: 250px;
+}
+
+/* about page */
+.about-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  max-height: 50%;
+  border-radius: 25px;
+}
+
+.center-all {
+  text-align: center;
+}
+#about h1, h2, p {
+  text-align: center;
+
+}
+
+.resumebutton {
+  background-color: transparent;
+  color: #B294F0;
+  text-transform: uppercase;
+  border: 2px solid #B294F0;
+}
+.resumebutton:hover {
+  opacity: 0.5;
+  color: #B294F0;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #787878; 
+  text-align: center;
+}
+
+/*olive page*/
+#project1 h1 {
+  text-align: center;
+}
+
+#project1 h4 {
+  text-align: center;
+  font-weight: 700;
+  color: #000000;
+}
+
+.olivecover-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 50%;
+  text-align: center;
+  border-radius: 5px;
 }

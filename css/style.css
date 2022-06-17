@@ -125,6 +125,7 @@ a:focus {
   display: inline-block;
   background-color: #B294F0;
   color: #ffffff; /* needed to override the default link color */
+  text-color: #ffffff;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -132,9 +133,21 @@ a:focus {
   transition: 0.2s opacity;
   text-align: center;
 }
+
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.olivebutton {
+  background-color: transparent;
+  color: #B294F0;
+  text-transform: uppercase;
+  border: 2px solid #B294F0;
+}
+.olivebutton:hover {
+  background-color: #B294F0;
+  color: #ffffff;
 }
 
 /*footer*/
@@ -195,24 +208,20 @@ svg {
 .center-all {
   text-align: center;
 }
-#about h1, h2, p {
+#about h1, h2, p, div {
   text-align: center;
-
 }
-
 .resumebutton {
   background-color: transparent;
   color: #B294F0;
   text-transform: uppercase;
   border: 2px solid #B294F0;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 .resumebutton:hover {
-  opacity: 0.5;
-  color: #B294F0;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #787878; 
-  text-align: center;
+  background-color: #B294F0;
+  color: #ffffff;
 }
 
 /*olive page*/
@@ -226,6 +235,26 @@ svg {
   color: #000000;
 }
 
+#project1 picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 50%;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+.img-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 50%;
+  text-align: center;
+  border-radius: 5px;
+}
 .olivecover-img {
   display: block;
   margin-left: auto;
@@ -234,4 +263,45 @@ svg {
   max-width: 50%;
   text-align: center;
   border-radius: 5px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+    #hero span {
+  display: block;
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }

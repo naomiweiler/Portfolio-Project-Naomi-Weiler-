@@ -11,12 +11,12 @@
     <title>Naomi Weiler UX Design Portfolio</title>
   </head>
 
-  <body>
+  <body id="about">
     <!-- Header Section -->
   <header>
     <!-- For the Navigation -->
     <div class="container">
-      <div class="navtoggle" id="mynavtoggle">
+      <div class="navtoggle" id="myNavtoggle">
       <a class="logo" href="index.html"> <img src="https://lh3.googleusercontent.com/wtHCC0gLSfzEJbYilw1u-R7knxGBy6FJSsJ3FDGNwJibuXeiuVGeFBRcgPxzt0LQ5OKZjNao1WcTAASksPFDmjJ7tc6Yb3c4v4CqHeioJWlv5XBqGCDraNQewJuo7EyjZ580I6bg=w500-h315-p-k" class="logo" > </a>
 
       <nav>
@@ -33,20 +33,24 @@
 <main>
 
   <!-- Main Content -->
-  <div id="about">
+  <div>
     <div class="container">
-    <div>
       <h1> About </h1>
       </div>
-  </div>
+      </div>
+      <!-- end of the about heading-->
+      <!-- beginning of section with page content-->
   <div>
-    <div>
+    <!-- main section-->
+    <div class="container">
+      <!--container/wrapper-->
       <picture>
         <img src="https://lh3.googleusercontent.com/yjJ27NjMo48ydZjP5GUcXiQj23iQT-oP3OoBTMQRyyBKgpvoD0Z0ov7EDpnz-QE-TP-6j2mMvOhqhxZuRrvQ-vUd4CCVGGZFVo-D05iCT2RX4t41epQjdcM-dCy_OsLJSxCclPf0=w560-h315-p-k" media="(max-width: 500px)" class="about-img"> </img>
           </picture>
           <div>
-            <div class="container">
-            <div class="row">
+            <!--beginning of my story & tools section-->
+            <div>
+              <!-- beginning of my story section -->
               <h2> Who Am I? </h2>
               <p>
                 I’m Naomi, a UX designer with a marketing background located in Philadelphia, PA. </p>
@@ -56,16 +60,14 @@
 <p> I am an INFJ, which ranks as the most empathetic Myers Briggs personality type and is referred to as “the advocate.” I strive to improve the lives of others through design and it is my ongoing passion to build delightful, human-centered experiences that add value to users' lives. </p>
 
 
-
-                <a href="files/nwresume.pdf" target="_blank" class="resumebutton">View my resume</a>
-
-              </div> <!-- end column 1 -->
-            </div>
-
-            <div class="container">
-            <div class"row"><!-- light blue container for column 2 -->
-              <h2> Skills & Tools </h2>
-              <div> <!-- container for relevant skills -->
+                <a href="files/nwresume.pdf" target="_blank" class="button">View my resume</a>
+</div>
+<!-- end of my story section -->
+            <div> <!-- beginning of tools section-->
+            <h2> Skills & Tools </h2>
+            <div class="row" id="skills">
+  <div class="col-md-6">
+  <h3> Relevant Skills </h3>
                 <ul>
                   <li> User research/interviews
                     <li> Develop user personas and user flows
@@ -76,7 +78,10 @@
                               <li> Frontend development
                   </ul>
                 </div> <!-- end container for relevant skills -->
-                <div> <!-- container for tools -->
+
+                <div class="col-md-6" id="tools">
+                  <!-- beginning of tools -->
+<h3> My Toolkit </h3>
                   <ul>
                     <li> Figma
                       <li> Sketch
@@ -85,17 +90,16 @@
                             <li> Balsamiq
                     </ul>
                   </div> <!-- end container for tools -->
-</div> <!-- end column 2 -->
+</div>   <!--end of 'relevant skills' and 'tools' container-->
+</div> <!-- end of tools section -->
+    </div> <!-- end of my story and tools section -->
+</div> <!-- end of container/wrapper -->
+</main> <!-- End Main Content -->
 
-</div>
-    </div>
-
-<!-- End Main Content -->
-
+<br />
   <!-- Footer Section -->
   <footer id="contact">
     <div class="container">
-      <div class="row">
         <h2> Get in touch  </h2>
         <p> Have questions or inquiries? Call or text <a href="tel:3026685999">3026685999 </a> or send me an email
          </p>

@@ -123,15 +123,13 @@ a:focus {
   text-decoration: underline;
 }
 
-.button {
+a.button {
   display: inline-block;
   background-color: #transparent;
   color: #B294F0; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-color: #B294F0;
-  border: 3px solid: #B294F0;
-  border-bottom: 1px solid #787878; /* width of the border, type, color */
+  border: 3px solid #B294F0;
   transition: 0.2s opacity;
   text-align: center;
 }

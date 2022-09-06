@@ -19,7 +19,6 @@ html {
 /* header styling */
 header {
     background-color: #d3d3d3;
-    text-align: center;
     padding: 10px;
     margin: 10px;
     box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
@@ -59,6 +58,31 @@ h4 {
   font-weight: 400;
 }
 
+#menuIcon {
+  max-width: 30px
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+main {
+  padding-top: 56px;
+}
 img {
   width: 100%;
   max-width: 100%;
@@ -91,9 +115,7 @@ img {
 }
 
 /* nav */
-nav > ul > li {
-  display: inline-block;
-}
+
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -101,7 +123,21 @@ nav > ul > li > a {
   font-weight: 700;
   color: #4a4a4a;
 }
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
 
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 a {
   color: #B294F0;
   text-decoration: none; /* No underlining */
@@ -192,7 +228,7 @@ svg {
   padding: 0 15px;
 }
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 /* about page */
@@ -274,12 +310,24 @@ Medium devices (640px and larger)
   text-align: unset;
   padding: 20px 0 13px;
     }
-
+    nav > ul > li {
+      display: inline-block;
+    }
+    .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul {
+  margin: 1em 0;
+}
     nav {
       width: auto;
       float: right;
       margin-top: 4px;
     }
+
     body {
     font-size: 18px;
   }

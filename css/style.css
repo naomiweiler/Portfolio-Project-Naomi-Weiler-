@@ -5,7 +5,7 @@ Colors used:
 (Grey1): #3E413F
 (Grey 2): #4a4a4a
 Olive Primary (Light Green): #E3F0E4
-Brand Primary (Purple): #B294F0
+Brand Primary (Purple): #8859E8
 Brand Secondary (Dark Pink): #f209B1
 */
 * {
@@ -139,12 +139,12 @@ nav > ul > li > a {
   padding: 0 0 10px;
 }
 a {
-  color: #B294F0;
+  color: #8859E8;
   text-decoration: none; /* No underlining */
 }
 
 a:visited { /* visited link */
-  color: #B294F0;
+  color: #8859E8;
 }
 a:hover {
   color: #f209B1;
@@ -162,10 +162,10 @@ a:focus {
 a.button {
   display: inline-block;
   background-color: #transparent;
-  color: #B294F0; /* needed to override the default link color */
+  color: #8859E8; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border: 3px solid #B294F0;
+  border: 3px solid #8859E8;
   transition: 0.2s opacity;
   text-align: center;
 }
@@ -179,22 +179,22 @@ a.button {
   background-color: transparent;
   color: #White;
   text-transform: uppercase;
-  border: 2px solid #B294F0;
+  border: 2px solid #8859E8;
 }
 .olivebutton:hover {
-  background-color: #B294F0;
+  background-color: #8859E8;
   color: #ffffff;
 }
 
 /*footer*/
 .button.contact {
   background-color: transparent;
-  color: #B294F0;
+  color: #8859E8;
   text-transform: uppercase;
-  border: 2px solid #B294F0;
+  border: 2px solid #8859E8;
 }
 .button.contact:hover {
-  background-color: #B294F0;
+  background-color: #8859E8;
   color: #ffffff;
 }
 
@@ -249,14 +249,14 @@ svg {
 }
 .resumebutton {
   background-color: transparent;
-  color: #B294F0;
+  color: #8859E8;
   text-transform: uppercase;
-  border: 2px solid #B294F0;
+  border: 2px solid #8859E8;
   transition-duration: 0.2s;
   transition-property: opacity;
 }
 .resumebutton:hover {
-  background-color: #B294F0;
+  background-color: #8859E8;
   color: #ffffff;
 }
 
